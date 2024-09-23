@@ -1,5 +1,8 @@
-import React from "react";
 
-export default function () {
-    return <div></div>;
+export default function Dashboard() {
+    return (
+        <>
+            <h1>Test</h1>
+        </>
+    )
 }
