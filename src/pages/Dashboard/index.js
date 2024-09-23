@@ -1,2 +1,2 @@
-import Dashboard from "./Card";
-export default Card
+import Dashboard from "./Dashboard";
+export default Dashboard
