@@ -3,6 +3,7 @@ import Dashboard from './pages/Dashboard'
 import Template from './components/Template'
 import Home from './pages/Home'
 import Training from './pages/Training'
+import './assets/style/main.scss'
 
 const router = createBrowserRouter([
   {
