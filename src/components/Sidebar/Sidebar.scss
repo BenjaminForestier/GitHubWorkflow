@@ -1,0 +1,22 @@
+.sidebar {
+    &__container {
+        width: 30vh;
+        height: 100vh;
+        border-right: 2px solid #F37121;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__logo {
+        width: 95%;
+    }
+    &__nav {
+        width: 95%;
+        &__element {
+            border-radius: 10px;
+            border: 1px solid gray;
+            padding: 0.5rem;
+            text-align: center;
+        }
+    }
+}
