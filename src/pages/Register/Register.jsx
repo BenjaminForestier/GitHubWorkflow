@@ -37,6 +37,7 @@ export default function Register() {
           type="email" 
           value={email} 
           onChange={(e) => setEmail(e.target.value)} 
+          autoComplete="username"
           required 
         />
       </div>
@@ -46,6 +47,7 @@ export default function Register() {
           type="text" 
           value={username} 
           onChange={(e) => setUsername(e.target.value)} 
+          autoComplete="username"
           required 
         />
       </div>
@@ -56,7 +58,7 @@ export default function Register() {
           value={password} 
           onChange={(e) => setPassword(e.target.value)} 
           required 
-          current-password = 'true'
+          autocomplete="current-password"
         />
       </div>
       <div>

@@ -14,7 +14,11 @@ export const AuthProvider = ({ children }) => {
       const storedUsers = JSON.parse(localStorage.getItem('users')) || [];
       return storedUsers;
     });
-  
+    const [currentUser, setCurrentUser] = useState(() => {
+      return localStorage.getItem('currentUser')
+        ? JSON.parse(localStorage.getItem('currentUser'))
+        : null;
+    });
     const register = async (email, username, password, subscription) => {
         // const salt = await bcrypt.genSalt(10); 
         // const hashedPassword = await bcrypt.hash(password, salt);
@@ -40,6 +44,8 @@ export const AuthProvider = ({ children }) => {
         const token = uuidv4(); // Générer un token pour cette session
         localStorage.setItem('authToken', token);
         localStorage.setItem('expiry', expiryTime.toJSON());
+        localStorage.setItem('currentUser', JSON.stringify(user));
+        setCurrentUser(user); 
         setAuthToken(token); // Mettre à jour l'état avec le token d'authentification
         return true;
       }
@@ -48,8 +54,11 @@ export const AuthProvider = ({ children }) => {
   
     const logout = () => {
       setAuthToken(null);
+      setCurrentUser(null);
       localStorage.removeItem('authToken');
       localStorage.removeItem('expiry');
+      localStorage.removeItem('currentUser');
+
     };
   
     useEffect(() => {
