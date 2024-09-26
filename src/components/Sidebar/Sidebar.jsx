@@ -9,9 +9,11 @@ export default function Sidebar() {
                 <img className='sidebar__logo' src={logo} alt="Logo Basic Fat" />
                 <nav className='sidebar__nav'>
                     <ul>
-                        <li className='sidebar__nav__element'><a href="/">Home</a></li>
-                        <li className='sidebar__nav__element'><a href="/dashboard">Dashboard</a></li>
-                        <li className='sidebar__nav__element'><a href="/training">Training</a></li>
+                        <li className='sidebar__nav__element'><a className="sidebar-link" href="/">Home</a></li>
+                        <hr />
+                        <li className='sidebar__nav__element'><a className="sidebar-link__border" href="/dashboard">Dashboard</a></li>
+                        <hr />
+                        <li className='sidebar__nav__element'><a className="sidebar-link" href="/training">Training</a></li>
                     </ul>
                 </nav>
             </div>

@@ -11,12 +11,18 @@
         width: 95%;
     }
     &__nav {
-        width: 95%;
+        width: 100%;
         &__element {
-            border-radius: 10px;
-            border: 1px solid gray;
             padding: 0.5rem;
             text-align: center;
         }
     }
+}
+
+.sidebar-link {
+    color: #000000;
+    // &__border {
+    //     border-top: 1px solid;
+    //     border-bottom: 1px solid;
+    // }
 }
