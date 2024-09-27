@@ -12,7 +12,6 @@ export default function Template() {
                 <div>
                     <Header />
                     <Outlet />
-                    <Footer />
                 </div>
             </div>
         </>

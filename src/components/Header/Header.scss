@@ -1,9 +1,12 @@
 .header-container {
-    width: 80vw;
+    width: 85vw;
     height: 10vh;
     border-bottom: 2px solid #F36400;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+.title {
+    color: #F36400;
 }
