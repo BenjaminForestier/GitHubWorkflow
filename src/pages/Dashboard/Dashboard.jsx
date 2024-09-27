@@ -10,7 +10,7 @@ export default function Dashboard() {
                 <div>
 
                     <h2>Mes Séances</h2>
-                    <div className='training-container'>
+                    <div className='section-container'>
                         <div className="card">
                             <h3>Cardio</h3>
                             <p>40 min</p>
@@ -21,7 +21,7 @@ export default function Dashboard() {
                 <div>
 
                     <h2>Mes Objectifs</h2>
-                    <div className='goal-container'>
+                    <div className='section-container'>
                         <div className="card">
                             <div className='card__row'>
                                 <img src={calories} alt="calories" />
@@ -52,11 +52,12 @@ export default function Dashboard() {
                     </div>
                 </div>
                 <div>
-
                     <h2>Mon Historiques</h2>
-                    <div>
-                        <div>
-
+                    <div className='section-container'>
+                        <div className="card">
+                            <h3>Fitness</h3>
+                            <p>1h</p>
+                            <p>23/09/2024 à 13:30</p>
                         </div>
                     </div>
                 </div>
