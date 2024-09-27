@@ -1,12 +1,32 @@
-import './App.css'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Dashboard from './pages/Dashboard'
+import Template from './components/Template'
+import Home from './pages/Home'
+import Training from './pages/Training'
+import './assets/style/main.scss'
+import './App.scss'
 
-function App() {
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Template />,
+    children: [
+      {
+        index: true,
+        element: <Home />
+      },
+      {
+        path: 'dashboard',
+        element: <Dashboard />
+      },
+      {
+        path: 'training',
+        element: <Training />
+      }
+    ]
+  }
+])
 
-  return (
-    <>
-      <h1>Le Titre</h1>
-    </>
-  )
+export default function App() {
+  return <RouterProvider router={router} />
 }
-
-export default App
