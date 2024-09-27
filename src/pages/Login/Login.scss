@@ -1,0 +1,64 @@
+// sidebar__container{}
+.hader-container,sidebar__container{
+    display: none;
+}
+    #login{
+    max-height: 100vh;
+    .login__content{
+        // background-color: red;
+        padding: 1vh .8vw;
+        display: flex;
+        // max-width: 100%;
+        align-items:flex-start;      
+        justify-content: space-between;
+        height: 100vh;
+        .form__content{
+            margin-top: 7vh;
+            label{
+                font-weight: 500 !important;
+            }
+            width: 40%;
+            .login__title{
+                margin: 5vh 0;
+                h2{
+                    font-size: 2.6rem;
+                    font-weight: 700;
+                }
+                p{
+                    color: gray;
+                }
+            }
+            .sign_in{
+                margin: 2vh 0;
+            }
+            .connection_btn{
+                background-color: #FF6400 !important;
+                padding-left: 2vw !important;
+                padding-right: 2vw !important;
+                border-width: 0px !important;
+                font-weight: 600;
+                margin: 1vh 0;
+            }
+            .logo_img{
+                width: 40%;
+                height: auto;
+                margin: 2vh 0;
+            }
+        }
+        padding-left: 3vw;
+        .visual__content{
+            width: 40%;
+            height: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+                //assombrissement de l'image avec du noir 
+                filter: brightness(80%);
+
+
+            }
+        }
+    }
+}

@@ -1,8 +1,10 @@
-
+import React from "react";
+import { useAuth } from "../../utils/AuthProvider";
 export default function Dashboard() {
-    return (
-        <>
-            <h1>Test</h1>
-        </>
-    )
+  const { currentUser,logout } = useAuth();
+  return (
+    <>
+      <h1>Test</h1>
+    </>
+  );
 }
