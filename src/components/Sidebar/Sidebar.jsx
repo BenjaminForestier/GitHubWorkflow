@@ -11,7 +11,7 @@ export default function Sidebar() {
                     <ul>
                         <li className='sidebar__nav__element'><a className="sidebar-link" href="/">Home</a></li>
                         <hr />
-                        <li className='sidebar__nav__element'><a className="sidebar-link__border" href="/dashboard">Dashboard</a></li>
+                        <li className='sidebar__nav__element'><a className="sidebar-link" href="/dashboard">Dashboard</a></li>
                         <hr />
                         <li className='sidebar__nav__element'><a className="sidebar-link" href="/training">Training</a></li>
                     </ul>
