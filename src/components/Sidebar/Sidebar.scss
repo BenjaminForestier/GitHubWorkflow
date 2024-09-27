@@ -1,14 +1,16 @@
 .sidebar {
     &__container {
+        padding-top: 1rem;
         width: 15vw;
         height: 100vh;
         border-right: 2px solid #F36400;
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 1rem;
     }
     &__logo {
-        width: 95%;
+        width: 80%;
     }
     &__nav {
         width: 100%;
