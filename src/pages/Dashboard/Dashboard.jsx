@@ -7,9 +7,9 @@ export default function Dashboard() {
     return (
         <>
             <div className='dashboard'>
+                <h2>Dashboard</h2>
                 <div>
-
-                    <h2>Mes Séances</h2>
+                    <h3>Mes Séances</h3>
                     <div className='section-container'>
                         <div className="card">
                             <h3>Cardio</h3>
@@ -19,8 +19,7 @@ export default function Dashboard() {
                     </div>
                 </div>
                 <div>
-
-                    <h2>Mes Objectifs</h2>
+                    <h3>Mes Objectifs</h3>
                     <div className='section-container'>
                         <div className="card">
                             <div className='card__row'>
@@ -52,7 +51,7 @@ export default function Dashboard() {
                     </div>
                 </div>
                 <div>
-                    <h2>Mon Historiques</h2>
+                    <h3>Mon Historiques</h3>
                     <div className='section-container'>
                         <div className="card">
                             <h3>Fitness</h3>
