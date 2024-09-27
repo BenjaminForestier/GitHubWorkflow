@@ -1,0 +1,20 @@
+.dashboard {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.training-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem 0rem;
+}
+
+.goal-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem 0rem;
+}
