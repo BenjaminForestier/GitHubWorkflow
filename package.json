@@ -18,8 +18,6 @@
   },
   "dependencies": {
 
-    "bootstrap": "^5.3.3",
-
     "@popperjs/core": "^2.11.8",
     "bcryptjs": "^2.4.3",
     "bootstrap": "^5.3.3",
