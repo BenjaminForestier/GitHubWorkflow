@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useAuth } from "../../utils/AuthProvider";
 import "./Login.scss";
 import login_image from "../../assets/images/login_image.jpg";
@@ -20,19 +20,15 @@ export default function Login() {
       // setPassword("");
       // setEmail("");
     }
-  //   <div>
-  //   {currentUser ? (
-  //     <div>
-  //       <h1>Bienvenue, {currentUser.username} !</h1>
-  //       <p>Email : {currentUser.email}</p>
-  //       <p>Abonnement : {currentUser.subscription}€</p>
-  //       <button onClick={() => logout()}>Déconnexion</button>
-  //     </div>
-  //   ) : (
-  //     <p>Vous n'êtes pas connecté</p>
-  //   )}
-  // </div>
   };
+  useEffect(() => {
+    if (window.location.pathname.includes('login') || window.location.pathname.includes('')  ) {
+        document.querySelector('.header-container').style.display = 'none'
+        document.querySelector('.sidebar__container').style.display = 'none'
+        document.querySelector('.app_body').style.width = '100%'
+
+    }
+  }, []);
   return (
     <section id="login">
       <div className="login__content">

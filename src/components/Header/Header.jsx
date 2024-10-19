@@ -5,7 +5,7 @@ export default function Header() {
     return (
         <>
             <div className='header-container'>
-                <h1 className='title'>BASIC FAT</h1>
+                <h2 className='title'>BASIC FAT</h2>
             </div>
         </>
     )

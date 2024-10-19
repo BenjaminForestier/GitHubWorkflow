@@ -9,7 +9,7 @@ export default function Template() {
         <>
             <div className='app-orientation'>
                 <Sidebar />
-                <div>
+                <div className='app_body'>
                     <Header />
                     <Outlet />
                 </div>

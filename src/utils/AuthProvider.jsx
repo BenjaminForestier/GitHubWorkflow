@@ -19,6 +19,8 @@ export const AuthProvider = ({ children }) => {
         ? JSON.parse(localStorage.getItem('currentUser'))
         : null;
     });
+
+    
     const register = async (email, username, password, subscription) => {
         // const salt = await bcrypt.genSalt(10); 
         // const hashedPassword = await bcrypt.hash(password, salt);
@@ -58,6 +60,7 @@ export const AuthProvider = ({ children }) => {
       localStorage.removeItem('authToken');
       localStorage.removeItem('expiry');
       localStorage.removeItem('currentUser');
+      //rediction sur la rote login
 
     };
   

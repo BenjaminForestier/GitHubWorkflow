@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useAuth } from "../../utils/AuthProvider";
 import register_image from "../../assets/images/login_image.jpg";
 import logo from "../../assets/images/basic_fat_logo.svg";
@@ -17,15 +17,13 @@ export default function Register() {
     register(email, username, password, subscription);
     alert("Utilisateur enregistré avec succès !");
   };
-  // const { authToken, logout, users } = useAuth();
-  // const navigate = useNavigate();
-
-  // useEffect(() => {
-  //   if (!authToken) {
-  //     navigate('/register'); // Redirige vers la page de connexion si non authentifié
-  //   }
-  // }, [authToken, navigate]);
-
+  useEffect(() => {
+    if (window.location.pathname.includes('register')) {
+        document.querySelector('.header-container').style.display = 'none'
+        document.querySelector('.sidebar__container').style.display = 'none'
+        document.querySelector('.app_body').style.width = '100%'
+    }
+  }, []);
   return (
     <section id="register">
       <div className="register__content">
